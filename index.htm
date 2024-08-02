@@ -2,32 +2,39 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container__main">
-        <div class="logo__a"><img src="./assets/logo_alura.svg"></div>
+        <div class="logo__a"><img src="./assets/logo_alura.svg" alt="Logo"></div>
         <div class="conteudo__main">
             <textarea type="text" class="text__area" placeholder="Digite seu texto"></textarea>
             <div>
                 <div class="alert">
-                    <img class="icon__alert" src="./assets/icon_attencion.svg">
+                    <img class="icon__alert" src="./assets/icon_attencion.svg" alt="Atenção">
                     <p>Apenas letras minúsculas e sem acento</p>
                 </div>
                 <div class="btns">
-                    <button class="btn__cript">Critografar</button>
+                    <button class="btn__cript">Criptografar</button>
                     <button class="btn__descript">Descriptografar</button>
-                </div>    
+                </div>
             </div>
         </div>
         <div class="response">
-            <img class="image_search" src="./assets/image_search.svg">
-            <p class="text__response_title">Nenhuma mensagem encontrada</p>
-            <p class="text__response_text">Digite um texto que deseja criptografar ou descriptografar</p>
+            <div class="response__default">
+                <img class="image_search" src="./assets/image_search.svg" alt="Imagem de busca">
+                <p class="text__response_title">Nenhuma mensagem encontrada</p>
+                <p class="text__response_text">Digite um texto que deseja criptografar ou descriptografar</p>
+            </div>
+            <textarea class="response__text" style="display:none;"></textarea>
+            <button class="btn__copy" style="display:none;">Copiar</button>
         </div>
     </div>
+    <footer>
+        <p>Desenvolvido por Elyon Ortiz & Alura</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
-    
